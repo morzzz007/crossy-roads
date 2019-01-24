@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
 
-        // TODO: can play?
+        if (!Manager.instance.CanPlay()) return;
 
         if (autoMove)
         {
