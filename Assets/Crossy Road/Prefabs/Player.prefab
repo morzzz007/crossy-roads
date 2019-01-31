@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 1594555835643556285}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7428299080913041030
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ Animator:
   m_GameObject: {fileID: 3399597399374272094}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d40b5c30508684e02ba6fecf5e6e2959, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97,15 +97,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 1
-  moveTime: 0.4
+  moveTime: 0.2
   colliderDistCheck: 1
   isIdle: 1
   isDead: 0
   isMoving: 0
   isJumping: 0
   jumpStart: 0
-  particle: {fileID: 0}
-  chick: {fileID: 0}
+  particle: {fileID: 810686509460636087}
+  chick: {fileID: 6260854615594076432}
 --- !u!95 &6179030868174165977
 Animator:
   serializedVersion: 3
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0742c2b01c8548c194109cfc8e91400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1594555835643556285}
 --- !u!1 &8396145618244394676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,14 +4894,6 @@ PrefabInstance:
     - target: {fileID: 434140, guid: 1bf698d9e6fd9bc45b0d64a3b6f302f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 434140, guid: 1bf698d9e6fd9bc45b0d64a3b6f302f2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 434140, guid: 1bf698d9e6fd9bc45b0d64a3b6f302f2, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bf698d9e6fd9bc45b0d64a3b6f302f2, type: 3}
