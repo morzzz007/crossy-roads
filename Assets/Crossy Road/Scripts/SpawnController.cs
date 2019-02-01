@@ -45,12 +45,12 @@ public class SpawnController : MonoBehaviour
         {
             if (i % 2 != 0)
             {
-                spawnersLeft[i].item = item1;
+                spawnersRight[i].item = item1;
 
             }
             else
             {
-                spawnersLeft[i].item = item2;
+                spawnersRight[i].item = item2;
 
             }
             spawnersRight[i].goLeft = goLeft;
